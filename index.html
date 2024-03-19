@@ -1,109 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BlueCat's Web</title>
-    <link rel="stylesheet" href="style.css"/>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #20202000;
-            color: #ecafff;
-            padding: 20px;
-            text-align: center;
-        }
-        nav {
-            background-color: #44444400;
-            text-align: center;
-            padding: 10px;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            padding: 10px 20px;
-        }
-        nav a:hover {
-            background-color: #55555500;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            padding: 20px;
-        }
-        .about-me, .portfolio, .contact {
-            margin-bottom: 40px;
-        }
-    </style>
-</head>
+  <meta charset="UTF-8">
+  <!-- HTTP 1.1 -->
+  <meta http-equiv="pragma" content="no-cache">
+  <!-- HTTP 1.0 -->
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta name="applicable-device" content="mobile">
+  <meta name="renderer" content="webkit">
+  <meta name="force-rendering" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1，minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="Copyright" content="miHoYo">
+  <meta name="Description" content="">
+  <meta name="Keywords" content="">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="format-detection" content="email=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-status-bar-style" content="black-translucent">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link data-n-head="1" rel="icon" type="image/x-icon" href="./mapicon.png">
+  
+    <!-- 海外 -->
+    <!-- <link data-n-head="1" rel="icon" type="image/x-icon" href="https://webstatic-sea.hoyoverse.com/upload/static-resource/2022/03/16/7ed12b72d7cc41a50d757becea8a4849_8300433591721976606.png"> -->
+    <title>Genshin Impact Map</title>
+  
+<meta name="robots" content="noindex"><link rel="shortcut icon" href="mapicon.png"><link href="0_6a73ee451be3565603bc.css" rel="stylesheet"><link href="bundle_3b2a51526bfba0a9afa5.css" rel="stylesheet"></head>
 <body>
-
-    <div class="wrapper">
-        <div class="display">
-           <div id="time"></div>
-        </div>
-        <span></span>
-        <span></span>
-     </div>
-     <script>
-        setInterval(()=>{
-          const time = document.querySelector(".display #time");
-          let date = new Date();
-          let hours = date.getHours();
-          let minutes = date.getMinutes();
-          let seconds = date.getSeconds();
-          let day_night = "AM";
-          if(hours > 12){
-            day_night = "PM";
-            hours = hours - 12;
-          }
-          if(seconds < 10){
-            seconds = "0" + seconds;
-          }
-          if(minutes < 10){
-            minutes = "0" + minutes;
-          }
-          if(hours < 10){
-            hours = "0" + hours;
-          }
-          time.textContent = hours + ":" + minutes + ":" + seconds + " "+ day_night;
-        });
-     </script>
-
-    <header>
-        <h1>歡迎來到我的個人網站</h1>
-    </header>
-    <nav>
-        <a href="https://www.youtube.com/channel/UC_x7_9A0cN3gIy1hnZklTfQ">我的頻道</a>
-        <a href="./videos.html">youtube影片</a>
-        <a href="#contact">聯絡我</a>
-    </nav>
-    <div class="container">
-        <section id="about" class="about-me">
-            <h2>關於我</h2>
-            <p>我是一個網頁設計師，熱愛創作和實現想法。我喜歡使用HTML、CSS和JavaScript來建立美觀和功能豐富的網站。</p>
-        </section>
-        <section id="portfolio" class="portfolio">
-            <h2>作品集</h2>
-            <p>這裡展示了一些我過去完成的項目：</p>
-            <ul>
-                <li>項目1：[項目描述]</li>
-                <li>項目2：[項目描述]</li>
-                <li>項目3：[項目描述]</li>
-            </ul>
-        </section>
-        <section id="contact" class="contact">
-            <h2>聯絡我</h2>
-            <p>如果您對我的工作感興趣，請隨時與我聯絡：</p>
-            <ul>
-                <li>Email：example@example.com</li>
-                <li>電話：123-456-7890</li>
-            </ul>
-        </section>
-    </div>
-</body>
+  <div id="root"></div>
+  <script>
+    const url = window.location.href
+    const host = window.location.host
+    if (host.indexOf('-sea') > -1) {
+      const newUrl = url.replace('webstatic-sea', 'act')
+      window.location.replace(newUrl)
+    }
+  </script>
+  
+    <!-- 海外 -->
+    <script src="https://webstatic.hoyoverse.com/dora/biz/mihoyo-account-flow-sea/v2/main.js"></script>
+    <script src="https://webstatic.hoyoverse.com/dora/biz/mihoyo-analysis/v2/main.js"></script>
+    <script src="https://webstatic.hoyoverse.com/dora/lib/vue-sentry/2.6.11/vue.min.js"></script>
+  
+  <script id="vconsole" type="text/javascript" data-src="https://webstatic.mihoyo.com/dora/lib/vconsole/3.2.0/vconsole.min.js"></script>
+  
+    <!-- <script src="https://webstatic.hoyoverse.com.com/dora/lib/vue-sentry/2.6.11/vue.min.js"></script> -->
+    <!-- <script src="https://webstatic-sea.mihoyo.com/dora/lib/vue-sentry/2.6.11/vue.min.js"></script> -->
+    <script>
+      Sentry.init({
+        dsn: 'https://2d2044ee9ba34d41b1deb282529024b0@sentry-sea.hoyoverse.com/9',
+        integrations: [new Sentry.Integrations.Vue({Vue: Vue, attachProps: true, logErrors: true})],
+        ignoreErrors: [
+          'The play() request was interrupted',
+          'The operation was aborted',
+          '$ is not defined',
+          'mihoyo-event-dialog-cancel',
+          "play() failed because the user didn't interact with the document first",
+          'The play method is not allowed by the user agent or the platform in the current context'
+        ]
+      });
+    </script>
+  
+<script type="text/javascript" src="vendors_b27b8e56c8dfedb14d7d.js"></script><script type="text/javascript" src="bundle_ff7115ee0dccdd5baa44.js"></script></body>
 </html>
