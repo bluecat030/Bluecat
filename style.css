@@ -1,7 +1,12 @@
-
+.logo {
+  margin-right: 20px; /* Logo 自动排在左侧 */
+}
 header {
   font-family: "Honk", system-ui;
   font-optical-sizing: none;
+  position: fixed;
+  width: 100%;
+  justify-content: space-between;
   font-weight: 400;
   font-size: 1.2em;
   letter-spacing: 2px;
@@ -9,6 +14,36 @@ header {
   font-variation-settings:
     "MORF" 15,
     "SHLN" 50;
+    z-index: 1000;
+    
+}
+nav ul {
+  list-style-type: none;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-left: auto; /* 将导航项推送到右侧 */
+  flex-wrap: nowrap;
+}
+
+nav ul li {
+  margin-left: 20px; /* 调整导航项之间的间距 */
+}
+
+nav ul li:first-child {
+  margin-left: 0; /* 第一个导航项无需左边距 */
+}
+
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+nav a:hover {
+  background-color: #ff00c859;
 }
 
 *{
@@ -25,7 +60,7 @@ header {
 }
 
 .box div{
-  position: absolute;
+  position: fixed;
   width: 60px;
   height: 60px;
   background-color: transparent;
@@ -93,40 +128,12 @@ header {
   }
 }
 
-header {
-    position: absolute;
-    top: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    
-    background-color: #00000000;
-    color: #ffffff;
-    padding: 20px;
-    text-align: center;
-    animation text 3s 1 ;
-    }
-    @keyframes text {
-      0%{
-        color: #00000000;
-        margin-bottom: -40px;
-      }
-      30%{
-        letter-spacing: 25px;
-        margin-bottom: -40px;
-      }
-
-    }
-
-body {
-    margin-top: 40px;
-}
-.content {
-    margin: 20px auto;
-    max-width: 800px;
-}
 
 
+
+
+
+/*
 nav {
     
     background-color: #44444400;
@@ -142,9 +149,7 @@ nav a {
     padding: 20px 10px 20px;
     display: block;
 }
-nav a:hover {
-    background-color: #ff00c859;
-}
+
 .container {
     max-width: 800px;
     margin: auto;
@@ -154,7 +159,10 @@ nav a:hover {
     margin-bottom: 40px;
 }
 
-/*
+
+
+
+
 *{
     margin: 0;
     padding: 0;
