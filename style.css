@@ -1,6 +1,45 @@
 .logo {
   margin-right: 20px; /* Logo 自动排在左侧 */
 }
+
+#all{
+  background: linear-gradient(90deg, rgba(2,0,.6,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1)) ;
+  width:100%;
+  margin: 0px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  z-index: 1;
+}
+#header{
+
+  padding:2%;
+}
+#sidebarLeft{
+
+  padding:200px 0 200px 0 ;
+  width: 150px;
+  float:left;
+}
+#sidebarRight{
+  padding:200px 0 200px 0 ;
+  width: 150px;
+  float:right;
+}
+#content{
+  background-color: rgba(64, 72, 99, 0.5);
+  margin-left: 150px;
+  margin-right: 150px;
+  padding:200px 0 400px 0;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  backdrop-filter: blur(6px);
+}
+#footer{
+  padding: 1%;
+}
+
+
 header {
   font-family: "Honk", system-ui;
   font-optical-sizing: none;
@@ -84,6 +123,7 @@ nav a:hover {
   height: 60px;
   background-color: transparent;
   border: 6px solid rgba(255,255,255,0.8);
+  z-index: 2;
 }
 .box div:nth-child(1){
   top: 12%;
@@ -146,9 +186,6 @@ nav a:hover {
     opacity: 0;
   }
 }
-
-
-
 
 
 
