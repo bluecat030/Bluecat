@@ -6,13 +6,19 @@
     <title>BlueCat's Web</title>
     <link rel="stylesheet" href="style.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-brands/css/uicons-brands.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-brands/css/uicons-brands.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-brands/css/uicons-brands.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
 
 </head>
 
 <body>
-  <div id="all">
+  <div id="all" data-aos="fade-up"data-aos-anchor-placement="top-bottom">
     
     <div id="header">
       <nav>
@@ -20,17 +26,53 @@
           <img src="logo.png" width="50" height="50" alt="logo">
         </a>
         <ul>
-          <li><a href="https://www.youtube.com/channel/UC_x7_9A0cN3gIy1hnZklTfQ">我的頻道</a></li>
-          <li><a href="./videos.html">youtube影片</a></li>
+          <li><a href="#channel">我的頻道</a></li>
+          <li><a href="#youtube">youtube影片</a></li>
           <li><a href="#contact">聯絡我</a></li>
         </ul>
     </div>
     <div id="sidebarLeft"></div>
     <div id="sidebarRight"></div>
-    <div id="content"><body style="color:white;">嗨! 我是BlueCat,歡迎來到我的網站</body></div>
+    <div id="content"><body style="color:white;">嗨! 我是BlueCat,歡迎來到我的網站,這是我自主學習所製作的網站。<br>
+      後面這個背景方塊是我一個一個做出來的,每一個方塊的動畫秒數都不一樣,我打得很辛苦= =
+    <br><br><br><br><br><br>
+   
+    </body></div>
+      <br>
+      <div id="channel" data-aos="fade-up"data-aos-anchor-placement="top-bottom">
+        <div id="content">這是我的頻道,裡面有我試著用AE和PR做的Valorant Montages</div>
+      </div><br>
+    <div id="youtube" data-aos="fade-up"data-aos-anchor-placement="top-bottom">
+      <div id="content">這是我上傳過的yt影片<br>
+        <iframe width="1280" height="720" src="https://www.youtube.com/embed/TdYsVB4imAM?si=1DjZiIMTZGCSnzn9&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen  data-aos="fade-up"data-aos-anchor-placement="top-bottom"></iframe>
+
+
+      </body></div>
+      <br>
+    </div>
+    <div id="contact" data-aos="fade-up"data-aos-anchor-placement="top-bottom">
+      <div id="content">
+        資訊<br><br>
+        <a href="https://www.instagram.com/blue.cat.0926/"><i class="fi fi-brands-instagram"> blue.cat.0926</i></a><br>
+        <a href="https://youtube.com/@blue.cat.7777"><i class="fi fi-brands-youtube"> 藍貓uwu</i></a><br>
+        <a href="https://discord.com/invite/SsBkMaM4"><i class="fi fi-brands-discord"> blue_cat_030</i></a><br>
+
+        
+      </div>
+    </div>
     <div id="footer"></div>
-    
+
+
+    <div class="goTop">
+      <a href="#" class="goTopBtn jq-goTop">
+        <i class="fi fi-sr-angle-circle-up"></i>
+      </a>
+    </div>
+
+
   </div>
+
+
 
   <div class="wrapper">
     <div class="box">
@@ -84,7 +126,9 @@
      </script>
     -->
 
-
+    <script>
+      AOS.init();
+    </script>
           
 
 </body>

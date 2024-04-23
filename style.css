@@ -35,10 +35,42 @@
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   backdrop-filter: blur(6px);
 }
+
+a {
+  color:#fff;
+  text-decoration:none;
+}
+a:hover {
+  color:#ffb4effd
+}
+
 #footer{
   padding: 1%;
 }
 
+.goTop {
+  position: fixed;
+  right: 120px;
+  bottom: 10px;
+  .goTopBtn {
+    background-color: transparent;
+    transform: translateX(0);
+    transition: transform 0.2s;
+    &.hide {
+      transform: translateX(120%);
+    }
+    border: none;
+    outline: none;
+    cursor: pointer;
+    .fi-sr-angle-circle-up {
+      color:linear-gradient(to right,  #ff7e5f, #feb47b);
+    }
+  }
+}
+
+html{
+  scroll-behavior: smooth;
+}
 
 header {
   font-family: "Honk", system-ui;
