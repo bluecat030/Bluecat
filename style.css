@@ -1,6 +1,7 @@
-.logo {
-  margin-right: 20px; /* Logo 自动排在左侧 */
+html,body{
+  overflow-x: hidden;
 }
+
 
 #all{
   background: linear-gradient(90deg, rgba(2,0,.6,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1)) ;
@@ -43,6 +44,7 @@ a {
 a:hover {
   color:#ffb4effd
 }
+
 
 #footer{
   padding: 1%;
@@ -98,16 +100,16 @@ nav ul {
   flex-wrap: nowrap;
 }
 
-nav ul li {
+nav ul  {
   margin-left: 20px; /* 调整导航项之间的间距 */
 }
 
-nav ul li:first-child {
-  margin-left: 0; /* 第一个导航项无需左边距 */
+nav ul {
+  margin-left: 50px; /* 第一个导航项无需左边距 */
 }
 
 
-nav ul li a {
+nav ul a {
   color: #fff;
   text-decoration: none;
   padding: 10px;
@@ -131,7 +133,24 @@ nav a:hover {
   
 }
 
+.channle {
+  position: relative;
+  left: 1000px;
+}
 
+.container {
+  position: relative;
+  width:100%;
+  height: 100%;
+  padding-bottom: 56.25%;
+}
+.video iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
 
 
